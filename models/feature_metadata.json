@@ -1,0 +1,77 @@
+{
+  "original_features": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "TotalServices",
+    "EstimatedLifetimeValue",
+    "TenureGroup",
+    "HighMonthlyCharge",
+    "IsLongTermContract",
+    "HasTechnicalSupport",
+    "HasOnlineSecurity",
+    "ServiceEngagementScore",
+    "CustomerValueSegment"
+  ],
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "TenureGroup",
+    "CustomerValueSegment"
+  ],
+  "numeric_features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "AverageMonthlySpend",
+    "TotalServices",
+    "EstimatedLifetimeValue",
+    "HighMonthlyCharge",
+    "IsLongTermContract",
+    "HasTechnicalSupport",
+    "HasOnlineSecurity",
+    "ServiceEngagementScore"
+  ],
+  "dropped_features": [
+    "customerID"
+  ],
+  "target_feature": "Churn",
+  "training_thresholds": {
+    "monthly_median": 70.45,
+    "lifetime_value_q33": 663.2800000000001,
+    "lifetime_value_q66": 2691.9500000000007
+  }
+}

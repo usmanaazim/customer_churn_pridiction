@@ -1,0 +1,153 @@
+{
+  "model_name": "Random Forest",
+  "variant": "No PCA Tuned",
+  "label": "Random Forest | No PCA | Tuned",
+  "uses_pca": false,
+  "training_date": "2026-08-24",
+  "accuracy": 0.7637010676156584,
+  "precision": 0.5392156862745098,
+  "recall": 0.739247311827957,
+  "f1_score": 0.6235827664399093,
+  "roc_auc": 0.8397831246291728,
+  "best_parameters": {
+    "max_depth": 10,
+    "min_samples_split": 5,
+    "n_estimators": 150
+  },
+  "training_samples": 5616,
+  "test_samples": 1405,
+  "feature_count_before_pca": 60,
+  "feature_count_after_pca": 60,
+  "pca_variance_retained": null,
+  "random_state": 42,
+  "test_size": 0.2,
+  "selection_rule": "Highest test F1, then highest ROC-AUC",
+  "explainability_note": "PCA-based models operate on transformed principal components, so original feature interpretation is shown separately using the non-PCA model.",
+  "non_pca_feature_importance": {
+    "available": true,
+    "random_forest": [
+      {
+        "feature": "tenure",
+        "importance": 0.22487920842225415
+      },
+      {
+        "feature": "SeniorCitizen",
+        "importance": 0.06056736962088171
+      },
+      {
+        "feature": "ServiceEngagementScore",
+        "importance": 0.05777254035102837
+      },
+      {
+        "feature": "AverageMonthlySpend",
+        "importance": 0.04614051291488073
+      },
+      {
+        "feature": "HighMonthlyCharge",
+        "importance": 0.04602403766640487
+      },
+      {
+        "feature": "MonthlyCharges",
+        "importance": 0.045512034074517975
+      },
+      {
+        "feature": "Partner_Yes",
+        "importance": 0.04312892395336086
+      },
+      {
+        "feature": "TotalServices",
+        "importance": 0.04206941082516539
+      },
+      {
+        "feature": "EstimatedLifetimeValue",
+        "importance": 0.04129792715838686
+      },
+      {
+        "feature": "Dependents_No",
+        "importance": 0.039823084412563686
+      },
+      {
+        "feature": "gender_Male",
+        "importance": 0.039061521486410886
+      },
+      {
+        "feature": "TotalCharges",
+        "importance": 0.038500455000976284
+      },
+      {
+        "feature": "Partner_No",
+        "importance": 0.036504196288801145
+      },
+      {
+        "feature": "HasOnlineSecurity",
+        "importance": 0.03615502402367113
+      },
+      {
+        "feature": "PhoneService_No",
+        "importance": 0.035978045954653814
+      }
+    ],
+    "logistic_regression": [
+      {
+        "feature": "tenure",
+        "importance": 0.8817976247061111
+      },
+      {
+        "feature": "Partner_Yes",
+        "importance": 0.26114444938797476
+      },
+      {
+        "feature": "Dependents_No",
+        "importance": 0.257073625671102
+      },
+      {
+        "feature": "gender_Male",
+        "importance": 0.23074420082172564
+      },
+      {
+        "feature": "HasOnlineSecurity",
+        "importance": 0.22637778031954092
+      },
+      {
+        "feature": "IsLongTermContract",
+        "importance": 0.20975604684727597
+      },
+      {
+        "feature": "ServiceEngagementScore",
+        "importance": 0.18346161720100912
+      },
+      {
+        "feature": "HighMonthlyCharge",
+        "importance": 0.13632981836189267
+      },
+      {
+        "feature": "TotalCharges",
+        "importance": 0.12325231758987601
+      },
+      {
+        "feature": "TotalServices",
+        "importance": 0.11058164548722801
+      },
+      {
+        "feature": "Partner_No",
+        "importance": 0.09091736764343
+      },
+      {
+        "feature": "Dependents_Yes",
+        "importance": 0.06631662643189763
+      },
+      {
+        "feature": "HasTechnicalSupport",
+        "importance": 0.05878035353998772
+      },
+      {
+        "feature": "PhoneService_Yes",
+        "importance": 0.05442277122847946
+      },
+      {
+        "feature": "MonthlyCharges",
+        "importance": 0.04385926875018663
+      }
+    ]
+  }
+}
